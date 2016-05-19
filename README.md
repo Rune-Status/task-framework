@@ -12,5 +12,8 @@ Task Framework for a Java applications and programs. Although this includes meth
 * Getting a valid task
 * Easily implementable
 
-### Version
-0.1
+### Versions
+**0.1 - 5/2/2016**
+```sh
+- Release Version
+```
