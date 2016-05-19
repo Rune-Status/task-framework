@@ -1,6 +1,7 @@
-package task_framework.tasks;
+package taskframework.tasks;
 
-import task_framework.framework.AbstractTask;
+
+import taskframework.framework.AbstractTask;
 
 /**
  * Created by Sphiinx on 4/20/2016.
