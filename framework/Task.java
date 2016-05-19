@@ -1,4 +1,4 @@
-package taskframework.framework;
+package TaskFramework.framework;
 
 /**
  * Created by Sphiinx on 4/20/2016.

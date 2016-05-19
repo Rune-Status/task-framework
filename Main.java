@@ -1,12 +1,13 @@
-package taskframework;
+package TaskFramework;
 
+import TaskFramework.framework.Task;
+import TaskFramework.framework.TaskManager;
+import TaskFramework.tasks.ExampleTask;
 import org.tribot.api.General;
 import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
-import taskframework.data.Vars;
-import taskframework.framework.Task;
-import taskframework.framework.TaskManager;
-import taskframework.tasks.ExampleTask;
+import TaskFramework.data.Vars;
+
 
 /**
  * Created by Sphiinx on 4/20/2016.
