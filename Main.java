@@ -1,12 +1,12 @@
-package TaskFramework;
+package scripts.TaskFramework;
 
-import TaskFramework.framework.Task;
-import TaskFramework.framework.TaskManager;
-import TaskFramework.tasks.ExampleTask;
+import scripts.TaskFramework.framework.Task;
+import scripts.TaskFramework.framework.TaskManager;
+import scripts.TaskFramework.tasks.ExampleTask;
 import org.tribot.api.General;
 import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
-import TaskFramework.data.Vars;
+import scripts.TaskFramework.data.Vars;
 
 
 /**

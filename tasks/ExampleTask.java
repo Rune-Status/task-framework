@@ -1,7 +1,7 @@
-package TaskFramework.tasks;
+package scripts.TaskFramework.tasks;
 
 
-import TaskFramework.framework.Task;
+import scripts.TaskFramework.framework.Task;
 
 /**
  * Created by Sphiinx on 4/20/2016.

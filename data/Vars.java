@@ -1,4 +1,4 @@
-package TaskFramework.data;
+package scripts.TaskFramework.data;
 
 /**
  * Created by Sphiinx on 5/2/2016.

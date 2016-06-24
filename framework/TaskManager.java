@@ -1,4 +1,4 @@
-package TaskFramework.framework;
+package scripts.TaskFramework.framework;
 
 import java.util.ArrayList;
 
