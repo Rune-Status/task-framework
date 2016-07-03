@@ -3,12 +3,12 @@ package scripts.TaskFramework.data;
 /**
  * Created by Sphiinx on 5/2/2016.
  */
-public class Vars {
+public class ExampleVars {
 
-    public static Vars vars;
+    public static ExampleVars vars;
 
-    public static Vars get() {
-        return vars == null ? vars = new Vars() : vars;
+    public static ExampleVars get() {
+        return vars == null ? vars = new ExampleVars() : vars;
     }
 
     public static void reset() {
