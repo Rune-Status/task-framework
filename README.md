@@ -61,7 +61,7 @@ public class Main {
 
 }
 ```
-3. Using your TaskManager object you can call the loop() method specifying your delay in the parameter. (NOTE: You may need to modify this method if you're not using this for TRiBot.)
+3. Using your TaskManager object you can call the loop() method specifying your delay in the parameter. (NOTE: You may need to modify this method with Thread#sleep if you're not using this for TRiBot.)
 ```java
 public class Main {
 
