@@ -80,6 +80,10 @@ public class Main {
 ```
 
 ### Versions
+**0.3 - 7/9/2016**
+```sh
+- Fixed a Bug with a sleep being in the wrong position causing high CPU issues.
+```
 **0.2 - 7/2/2016**
 ```sh
 - Completely Re-written.
