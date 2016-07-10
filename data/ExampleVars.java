@@ -15,7 +15,5 @@ public class ExampleVars {
         vars = null;
     }
 
-    public boolean stopProgram;
-
 }
 

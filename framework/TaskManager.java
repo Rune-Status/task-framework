@@ -17,12 +17,12 @@ public class TaskManager {
     /**
      * The master status for the program.
      */
-    private String status;
+    private static String status;
 
     /**
      * The master boolean for stopping the program.
      */
-    private boolean stop_program;
+    private static boolean stop_program;
 
     /**
      * Loops through all of the tasks in the task list until it finds an valid task that it can execute.
@@ -36,8 +36,8 @@ public class TaskManager {
             if (task != null) {
                 status = task.toString();
                 task.execute();
-                General.sleep(min, max);
             }
+            General.sleep(min, max);
         }
     }
 
@@ -96,12 +96,21 @@ public class TaskManager {
     }
 
     /**
+     * Gets the current status.
+     *
+     * @return The current status.
+     * */
+    public String getStatus() {
+        return status;
+    }
+
+    /**
      * Stops the program if the specified value is true.
      *
      * @param stop_program Stops the program if true; does nothing otherwise.
      * */
-    public void stopProgram(boolean stop_program) {
-        this.stop_program = stop_program;
+    public static void stopProgram(boolean stop_program) {
+        TaskManager.stop_program = stop_program;
     }
 
     /**
@@ -109,8 +118,8 @@ public class TaskManager {
      *
      * @param status The string of text to set the status.
      * */
-    public void setStatus(String status) {
-        this.status = status;
+    public static void setStatus(String status) {
+        TaskManager.status = status;
     }
 
 }
