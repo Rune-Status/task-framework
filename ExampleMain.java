@@ -18,11 +18,11 @@ public class ExampleMain extends Script {
     @Override
     public void run() {
         ExampleVars.reset();
-        addCollection();
+        addTasks();
         task_manager.loop(100, 150);
     }
 
-    private void addCollection() {
+    private void addTasks() {
         task_manager.addTask(new ExampleTask());
     }
 

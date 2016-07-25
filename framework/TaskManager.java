@@ -3,6 +3,7 @@ package scripts.TaskFramework.framework;
 import org.tribot.api.General;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Sphiinx on 4/20/2016.
@@ -12,7 +13,7 @@ public class TaskManager {
     /**
      * The master task list for the program.
      */
-    private ArrayList<Task> task_list = new ArrayList<>();
+    private List<Task> task_list = new ArrayList<>();
 
     /**
      * The master status for the program.

@@ -9,15 +9,18 @@ import scripts.TaskFramework.framework.Task;
 public class ExampleTask implements Task {
 
 
+    @Override
     public boolean validate() {
         return false;
     }
 
+    @Override
     public void execute() {
     }
 
+    @Override
     public String toString() {
-        return "";
+        return null;
     }
 
 }
