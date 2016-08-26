@@ -4,7 +4,7 @@
 Task Framework for Java applications and programs. Although this includes methods for TRiBot scripts, it can easily be modified for almost anything. Easily implementable and works well with many types of projects. It's used to schedule and execute independent tasks in a controlled manner.
 
 ### Features
-* Object Oritened
+* Object Oriented
 * Adding tasks
 * Removing tasks
 * Clear tasks
