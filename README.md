@@ -89,7 +89,7 @@ public class Main {
 - Completely Re-written.
 - Added the ability to set the status
 - Added the ability to stop the script.
-- Added comment to all the methods.
+- Added documentation.
 - Added ExampleVars.java
 - Added ExampleMain.java
 ```
