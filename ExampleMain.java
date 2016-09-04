@@ -1,10 +1,10 @@
-package scripts.TaskFramework;
+package scripts.task_framework;
 
-import scripts.TaskFramework.framework.TaskManager;
-import scripts.TaskFramework.tasks.ExampleTask;
+import scripts.task_framework.framework.TaskManager;
+import scripts.task_framework.tasks.ExampleTask;
 import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
-import scripts.TaskFramework.data.ExampleVars;
+import scripts.task_framework.data.ExampleVars;
 
 
 /**

@@ -1,4 +1,4 @@
-package scripts.TaskFramework.framework;
+package scripts.task_framework.framework;
 
 import org.tribot.api.General;
 
