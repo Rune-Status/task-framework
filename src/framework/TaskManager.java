@@ -1,6 +1,4 @@
-package scripts.task_framework.framework;
-
-import org.tribot.api.General;
+package src.framework;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,27 +24,30 @@ public class TaskManager {
     private static boolean stop_program;
 
     /**
-     * Loops through all of the tasks in the task list until it finds an valid task that it can execute.
+     * Loops through all of the src.tasks in the task list until it finds an valid task that it can execute.
      *
-     * @param min The minimum sleep delay after executing a task.
-     * @param max The maximum sleep delay after executing a task.
-     * */
-    public void loop(int min, int max) {
+     * @param sleep The sleep delay in milliseconds after executing a task.
+     */
+    public void loop(int sleep) {
         while (!stop_program) {
             Task task = getValidTask();
             if (task != null) {
                 status = task.toString();
                 task.execute();
             }
-            General.sleep(min, max);
+            try {
+                Thread.sleep(sleep);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     /**
-     * Adds all of the given tasks to the task list.
+     * Adds all of the given src.tasks to the task list.
      *
-     * @param tasks The tasks to be added to the task list.
-     * */
+     * @param tasks The src.tasks to be added to the task list.
+     */
     public void addTask(Task... tasks) {
         for (Task task : tasks) {
             if (!task_list.contains(task)) {
@@ -59,7 +60,7 @@ public class TaskManager {
      * Removed the specified task from the task list.
      *
      * @param task The specified task to be removed from the task list.
-     * */
+     */
     public void removeTask(Task task) {
         if (task_list.contains(task)) {
             task_list.remove(task);
@@ -67,27 +68,27 @@ public class TaskManager {
     }
 
     /**
-     * Clears all of the tasks in the task list.
-     * */
+     * Clears all of the src.tasks in the task list.
+     */
     public void clearTasks() {
         task_list.clear();
     }
 
     /**
-     * Gets the count of all the tasks in the task list.
+     * Gets the count of all the src.tasks in the task list.
      *
-     * @return A int count of all the tasks in the task list.
-     * */
+     * @return A int count of all the src.tasks in the task list.
+     */
     public int getTaskCount() {
         return task_list.size();
     }
 
     /**
-     * Filters through all of the tasks in the task list returning a valid task.
+     * Filters through all of the src.tasks in the task list returning a valid task.
      *
      * @return A validated task.
-     * */
-    public Task getValidTask() {
+     */
+    private Task getValidTask() {
         for (Task task : task_list) {
             if (task.validate()) {
                 return task;
@@ -100,25 +101,23 @@ public class TaskManager {
      * Gets the current status.
      *
      * @return The current status.
-     * */
+     */
     public String getStatus() {
         return status;
     }
 
     /**
-     * Stops the program if the specified value is true.
-     *
-     * @param stop_program Stops the program if true; does nothing otherwise.
-     * */
-    public static void stopProgram(boolean stop_program) {
-        TaskManager.stop_program = stop_program;
+     * Stops the program.
+     */
+    public static void stopProgram() {
+        TaskManager.stop_program = true;
     }
 
     /**
      * Sets the status of the program.
      *
      * @param status The string of text to set the status.
-     * */
+     */
     public static void setStatus(String status) {
         TaskManager.status = status;
     }

@@ -1,7 +1,7 @@
 # Task Framework
 
 ### Description
-Task Framework for Java applications and programs. Although this includes methods for [TRiBot](http://www.tribot.org) scripts, it can easily be modified for almost anything. Easily implementable and works well with many types of projects. It's used to schedule and execute independent tasks in a controlled manner.
+Task Framework for Java applications and programs. Although this includes methods for [TRiBot](http://www.tribot.org) scripts, it can easily be modified for almost anything. Easily implementable and works well with many types of projects. It's used to schedule and execute independent src.tasks in a controlled manner.
 
 ### How to create a task
 1. Create a new class and implement the interface Task.
@@ -35,7 +35,7 @@ public class Main {
 
 }
 ```
-2. Using your TaskManager object you can call the addTasks() method initializing your tasks in the parameter.
+2. Using your TaskManager object you can call the addTasks() method initializing your src.tasks in the parameter.
 ```java
 public class Main {
 
@@ -81,7 +81,7 @@ public class Main {
 - Added the ability to stop the script.
 - Added documentation.
 - Added ExampleVars.java
-- Added ExampleMain.java
+- Added src.ExampleMain.java
 ```
 **0.1 - 5/2/2016**
 ```sh

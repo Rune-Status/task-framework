@@ -1,4 +1,4 @@
-package scripts.task_framework.framework;
+package src.framework;
 
 /**
  * Created by Sphiinx on 4/20/2016.
