@@ -1,7 +1,7 @@
 # Task Framework
 
 ### Description
-Task Framework for Java applications and programs. Although this includes methods for [TRiBot](http://www.tribot.org) scripts, it can easily be modified for almost anything. Easily implementable and works well with many types of projects. It's used to schedule and execute independent src.tasks in a controlled manner.
+Task Framework for Java applications and programs; it can easily be modified for almost anything. Easily implementable and works well with many types of projects. It's used to schedule and execute independent tasks in a controlled manner.
 
 ### How to create a task
 1. Create a new class and implement the interface Task.
@@ -35,7 +35,7 @@ public class Main {
 
 }
 ```
-2. Using your TaskManager object you can call the addTasks() method initializing your src.tasks in the parameter.
+2. Using your TaskManager object you can call the addTasks() method initializing your tasks in the parameter.
 ```java
 public class Main {
 
@@ -51,15 +51,20 @@ public class Main {
 
 }
 ```
-3. Using your TaskManager object you can call the loop() method specifying your delay in the parameter. (NOTE: You may need to modify this method with Thread#sleep if you're not using this for TRiBot.)
+3. Using your TaskManager object you can call the loop() method specifying your delay in the parameter.
 ```java
-public class Main {
+public class ExampleMain {
 
     private static TaskManager task_manager = new TaskManager();
 
     public static void main(String[] args) {
+        run();
+    }
+
+    private static void run() {
+        ExampleVars.reset();
         addTasks();
-        task_manager.loop(100, 150);
+        task_manager.loop(100);
     }
 
     private static void addTasks() {
@@ -70,6 +75,11 @@ public class Main {
 ```
 
 ### Versions
+**0.4 - 1/13/2017**
+```sh
+- Removed constriction with TRiBot. It's no longer using any 3rd party API's 
+giving the ability to easily adapt to anything.
+```
 **0.3 - 7/9/2016**
 ```sh
 - Fixed a Bug with a sleep being in the wrong position causing high CPU issues.
