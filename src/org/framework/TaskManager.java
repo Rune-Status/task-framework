@@ -24,7 +24,7 @@ public class TaskManager {
     private static boolean stop_program;
 
     /**
-     * Loops through all of the src.tasks in the task list until it finds an valid task that it can execute.
+     * Loops through all of the tasks in the task list until it finds an valid task that it can execute.
      *
      * @param sleep The sleep delay in milliseconds after executing a task.
      */
