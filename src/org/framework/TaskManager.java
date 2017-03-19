@@ -44,9 +44,9 @@ public class TaskManager {
     }
 
     /**
-     * Adds all of the given src.tasks to the task list.
+     * Adds all of the given tasks to the task list.
      *
-     * @param tasks The src.tasks to be added to the task list.
+     * @param tasks The tasks to be added to the task list.
      */
     public void addTask(Task... tasks) {
         for (Task task : tasks) {
@@ -68,23 +68,23 @@ public class TaskManager {
     }
 
     /**
-     * Clears all of the src.tasks in the task list.
+     * Clears all of the tasks in the task list.
      */
     public void clearTasks() {
         task_list.clear();
     }
 
     /**
-     * Gets the count of all the src.tasks in the task list.
+     * Gets the count of all the tasks in the task list.
      *
-     * @return A int count of all the src.tasks in the task list.
+     * @return A int count of all the tasks in the task list.
      */
     public int getTaskCount() {
         return task_list.size();
     }
 
     /**
-     * Filters through all of the src.tasks in the task list returning a valid task.
+     * Filters through all of the tasks in the task list returning a valid task.
      *
      * @return A validated task.
      */
