@@ -19,7 +19,7 @@ public class ExampleMain {
     private static void run() {
         ExampleVars.reset();
         addTasks();
-        task_manager.loop(100);
+        task_manager.loop(150);
     }
 
     private static void addTasks() {
