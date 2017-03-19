@@ -1,6 +1,7 @@
-package src.tasks;
+package org.tasks;
 
-import src.framework.Task;
+
+import org.framework.Task;
 
 /**
  * Created by Sphiinx on 4/20/2016.

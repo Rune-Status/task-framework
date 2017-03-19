@@ -1,4 +1,4 @@
-package src.framework;
+package org.framework;
 
 import java.util.ArrayList;
 import java.util.List;
