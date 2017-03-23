@@ -91,7 +91,7 @@ giving the ability to easily adapt to anything.
 - Added the ability to stop the script.
 - Added documentation.
 - Added ExampleVars.java
-- Added src.ExampleMain.java
+- Added ExampleMain.java
 ```
 **0.1 - 5/2/2016**
 ```sh
