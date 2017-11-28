@@ -1,4 +1,4 @@
-package org.framework;
+package main.framework;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +19,9 @@ public class TaskManager {
     private static String status;
 
     /**
-     * The master boolean for stopping the program.
+     * The master boolean for stopping the task manager.
      */
-    private static boolean stop_program;
+    private static boolean stop_task_manager;
 
     /**
      * Loops through all of the tasks in the task list until it finds an valid task that it can execute.
@@ -29,7 +29,7 @@ public class TaskManager {
      * @param sleep The sleep delay in milliseconds after executing a task.
      */
     public void loop(int sleep) {
-        while (!stop_program) {
+        while (!stop_task_manager) {
             Task task = getValidTask();
             if (task != null) {
                 status = task.toString();
@@ -50,9 +50,8 @@ public class TaskManager {
      */
     public void addTask(Task... tasks) {
         for (Task task : tasks) {
-            if (!task_list.contains(task)) {
+            if (!task_list.contains(task))
                 task_list.add(task);
-            }
         }
     }
 
@@ -62,9 +61,8 @@ public class TaskManager {
      * @param task The specified task to be removed from the task list.
      */
     public void removeTask(Task task) {
-        if (task_list.contains(task)) {
+        if (task_list.contains(task))
             task_list.remove(task);
-        }
     }
 
     /**
@@ -90,10 +88,10 @@ public class TaskManager {
      */
     private Task getValidTask() {
         for (Task task : task_list) {
-            if (task.validate()) {
+            if (task.validate())
                 return task;
-            }
         }
+
         return null;
     }
 
@@ -107,10 +105,10 @@ public class TaskManager {
     }
 
     /**
-     * Stops the program.
+     * Stops the task manager.
      */
-    public static void stopProgram() {
-        TaskManager.stop_program = true;
+    public static void stopTaskManager() {
+        stop_task_manager = true;
     }
 
     /**

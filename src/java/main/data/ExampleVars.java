@@ -1,4 +1,4 @@
-package org.data;
+package main.data;
 
 /**
  * Created by Sphiinx on 5/2/2016.

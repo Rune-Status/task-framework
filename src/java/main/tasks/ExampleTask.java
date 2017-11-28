@@ -1,7 +1,7 @@
-package org.tasks;
+package main.tasks;
 
 
-import org.framework.Task;
+import main.framework.Task;
 
 /**
  * Created by Sphiinx on 4/20/2016.

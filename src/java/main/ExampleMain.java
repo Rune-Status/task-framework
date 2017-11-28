@@ -1,9 +1,9 @@
-package org;
+package main;
 
 
-import org.data.ExampleVars;
-import org.framework.TaskManager;
-import org.tasks.ExampleTask;
+import main.data.ExampleVars;
+import main.framework.TaskManager;
+import main.tasks.ExampleTask;
 
 /**
  * Created by Sphiinx on 4/20/2016.
